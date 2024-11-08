@@ -210,7 +210,7 @@ def extract_time_expressions(text , fileName):
     return df
 
 #-----------------------------------------------------------------------------------------------------------------------------
-path = 'D:/CEO data/CEO_Answers/7'
+path = '/input/CEOdata/CEO_Answers/'
 folder_path = Path(path)
 FileNames = []
 # Iterate over all the files in the folder
@@ -242,4 +242,4 @@ for index, row in dataF.iterrows():
     Result = pd.concat([Result, dfs], ignore_index=True)
 
 #print(Result)
-Result.to_csv('D:/Result.csv', index=False)
+Result.to_csv('/output/Result.csv', index=False)
